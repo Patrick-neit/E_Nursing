@@ -44,7 +44,6 @@ class RoleSeeder extends Seeder
         $permission24=Permission::create(['name' => 'servicio.update']);
         $permission25=Permission::create(['name' => 'servicio.destroy']);
         $permission25=Permission::create(['name' => 'visita.index']);
-        $permission26=Permission::create(['name' => 'visita.index']);
         $permission27=Permission::create(['name' => 'visita.edit']);
         $permission28=Permission::create(['name' => 'visita.create']);
         $permission29=Permission::create(['name' => 'visita.update']);
@@ -69,10 +68,10 @@ class RoleSeeder extends Seeder
         //Asignamos los permisos a los roles que pertenecen
         $role1->syncPermissions($permission1,$permission2, $permission3 ,$permission4, $permission5,$permission6,$permission7, $permission8 ,$permission9, $permission10,
         $permission11,$permission12, $permission13 ,$permission14, $permission15,$permission16,$permission17, $permission18 ,$permission19, $permission20,$permission21,$permission22, $permission23 ,$permission24, $permission25,
-        $permission26,$permission27, $permission28 ,$permission29, $permission30,$permission31,$permission32, $permission33 ,$permission34, $permission35,
+        $permission27, $permission28 ,$permission29, $permission30,$permission31,$permission32, $permission33 ,$permission34, $permission35,
         $permission36,$permission37,$permission38, $permission39 ,$permission40,$permission41,$permission42,$permission43, $permission44 ,$permission45);
 
-        $role2->syncPermissions ($permission1, $permission6,$permission7, $permission8 ,$permission9, $permission10,$permission26,$permission27, $permission28 ,$permission29, $permission30,$permission31,$permission32, $permission33 ,$permission34, $permission35,
+        $role2->syncPermissions ($permission1, $permission6,$permission7, $permission8 ,$permission9, $permission10,$permission27, $permission28 ,$permission29, $permission30,$permission31,$permission32, $permission33 ,$permission34, $permission35,
         $permission36,$permission37,$permission38, $permission39 ,$permission40,$permission41,$permission42,$permission43, $permission44 ,$permission45);
     }
 }
