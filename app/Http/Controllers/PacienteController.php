@@ -86,8 +86,8 @@ class PacienteController extends Controller
 
         $paciente->nombre =$request->get('nombre');
         $paciente->apellido =$request->get('apellido');
-        $paciente->fecha_nac =$request->get('profesion');
-        $paciente->telefono =$request->get('peso');
+        $paciente->profesion =$request->get('profesion');
+        $paciente->peso =$request->get('peso');
         $paciente->save();
 
         return redirect()->route('paciente.index');

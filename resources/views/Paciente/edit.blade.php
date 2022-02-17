@@ -2,9 +2,9 @@
 @section('contenido')
 <h2>EDITAR PACIENTE</h2>
 
-    <form action="{{ route('paciente.edit', [ $paciente -> id]) }}" method="POST">
+    <form action="{{ route('paciente.update',  $paciente ->id) }}" method="POST">
         @csrf
-        @method('put')
+        @method('PUT')
 
               <div class="mb-3">
                 <label for="" class="form-label">Nombre</label>
